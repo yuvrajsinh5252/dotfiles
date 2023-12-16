@@ -1,0 +1,33 @@
+# Ignore everything
+/*
+/waypaper/.cache
+*.out
+
+!.gitignore
+!.gitmodules
+!README.md
+!alacritty
+!i3
+!i3status
+!i3blocks
+!scripts
+!lvim
+!zsh
+!rofi
+# !polybar
+!picom
+!neofetch/config.conf
+!kitty
+!neovide
+!hypr
+!waybar
+!zsh
+!anyrun
+!dunst
+!waypaper
+!nvim
+!cava
+!fuzzel
+!ranger
+!mako
+!wal

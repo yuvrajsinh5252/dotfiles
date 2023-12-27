@@ -1,0 +1,56 @@
+* {
+font-family: "FontAwesome", "Fira Code";
+}
+
+window {
+margin: 0px;
+border-radius: 10px;
+background-color: #f8f8f2;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+background-color: #44475a;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #282a36;
+}
+
+#outer-box {
+margin: 2px;
+background-color: #282a36;
+border-radius: 10px;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+} 
+
+#entry.activatable #text {
+color: #282a36;
+}
+
+#entry > * {
+color: #f8f8f2;
+}
+
+#entry:selected {
+border-radius: 10px;
+background-color: #44475a;
+}
+
+#entry:selected #text {
+font-weight: bold;
+}

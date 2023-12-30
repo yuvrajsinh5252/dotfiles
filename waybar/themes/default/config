@@ -1,41 +1,30 @@
 {
-    "layer": "top", // Waybar at top layer
+    // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
-    "spacing": 20, // Gaps between modules (4px)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "margin-top": 5,
-    "margin-left": 5,
-    "margin-bottom": 5,
-    "margin-right": 5,
-    "modules-left": ["clock", "hyprland/window", "wlr/workspaces"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["backlight", "pulseaudio", "battery","network", "tray"],
+    "modules-left": ["hyprland/workspaces","custom/waybarthemes"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
-    "hyprland/workspaces": {
-         "all-outputs": true,
-         "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-    },
-    "wlr/workspaces": {
-      "on-click": "activate",
-      "all-outputs": true,
-      "format-icons": {
-        "1": "69",
-      }
-    },
-    "hyprland/window": {
-      "max-length": 100,
-      "seperate-outputs": true
-    },
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "warp-on-scroll": false,
+    //     "format": "{name}: {icon}",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
+    // },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -44,6 +33,12 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    // Waybar Themes
+    "custom/waybarthemes": {
+        "format": "Themes",
+        "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+        "tooltip": false
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -115,7 +110,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["","",""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -171,5 +166,8 @@
             "default": "🎜"
         },
         "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
+

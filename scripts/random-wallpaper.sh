@@ -38,7 +38,6 @@ shuffle
 # set wallpapers in incremental order
 index=0
 swww img --transition-type wipe --transition-angle 30 --transition-step 90 "${wallpapers[$index]}"
-sh ~/.config/waybar/launch.sh
 gsettings set org.gnome.desktop.background picture-uri "${wallpapers[$index]}"
 wal -i "${wallpapers[$index]}"
 # index is maxing out, so reset it

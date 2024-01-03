@@ -92,15 +92,15 @@
     // Wallpaper
     "custom/wallpaper": {
         "format": "",
-        "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
-        "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
+        "on-click": "~/.config/hypr/scripts/wallpaper.sh select",
+        "on-click-right": "~/.config/hypr/scripts/wallpaper.sh",
         "tooltip": false
     },
 
     // Waybar Themes
     "custom/waybarthemes": {
         "format": "",
-        "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+        "on-click": "~/.config/waybar/themeswitcher.sh",
         "tooltip": false
     },
     

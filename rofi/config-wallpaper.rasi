@@ -1,14 +1,3 @@
-/*
-#  ____        __ _  
-# |  _ \ ___  / _(_) 
-# | |_) / _ \| |_| | 
-# |  _ < (_) |  _| | 
-# |_| \_\___/|_| |_| 
-#                    
-# by Stephan Raabe (2023) 
-# ----------------------------------------------------- 
-*/
-
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
@@ -28,7 +17,7 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                        761px;
+    width:                        637px;
     x-offset:                     0px;
     y-offset:                     65px;
     spacing:                      0px;

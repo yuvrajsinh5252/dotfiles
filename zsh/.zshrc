@@ -103,6 +103,7 @@ eval neofetch
 
 # bun completions
 [ -s "/home/yuvrajsinh/.bun/_bun" ] && source "/home/yuvrajsinh/.bun/_bun"
+alias define='python3 ~/Desktop/Codes/Word-Whiz/main.py'
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

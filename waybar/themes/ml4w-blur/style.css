@@ -38,7 +38,6 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-    background: @workspacesbackground1;
     margin: 5px 1px 6px 1px;
     padding: 0px 1px;
     border-radius: 15px;
@@ -53,18 +52,21 @@ window#waybar {
 #workspaces button {
     padding: 0px 5px;
     margin: 4px 3px;
-    border-radius: 15px;
+    min-width: 40px;
+    min-height: 30px;
+    border-radius: 10px;
     border: 0px;
     color: @textcolor1;
     background-color: @workspacesbackground2;
     transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 #workspaces button.active {
     color: @textcolor1;
-    background: @workspacesbackground2;
+    background: @workspacesbackground1;
     border-radius: 15px;
+    min-height: 30px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
     opacity:1.0;
@@ -128,7 +130,7 @@ window#waybar.empty #window {
 }
 
 #taskbar button {
-    margin:0;
+    margin:0px;
     border-radius: 15px;
     padding: 0px 5px 0px 5px;
 }

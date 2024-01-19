@@ -31,7 +31,6 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenu",
         // START TASK TOOGLE
         "wlr/taskbar",
         // END TASK TOOGLE

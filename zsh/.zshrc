@@ -73,7 +73,6 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-neofetch
 echo ""
 
 # User configuration

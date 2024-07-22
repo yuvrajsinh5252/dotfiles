@@ -1,14 +1,14 @@
 {
      "layer": "top",
      "position": "top",
-     "margin-top": 10,
-     "margin-left": 10,
-     "margin-right": 10,
+     "margin-top": 5,
+     "margin-left": 5,
+     "margin-right": 5,
     "height": 30,
     "spacing": 0,
     "modules-left": ["custom/launcher","hyprland/workspaces","cpu","memory"],
     "modules-center": ["custom/song_name","custom/pre","custom/spotify","custom/next"],
-    "modules-right": ["tray","network", "pulseaudio","clock","custom/powermenu"],
+    "modules-right": ["tray","network", "pulseaudio","battery","clock","custom/powermenu"],
 
 "hyprland/workspaces": {
 	"on-click": "activate",
@@ -28,13 +28,25 @@
     },
     "memory": {
     "interval": 3,
-    "format": "   {}% ",
-    "max-length": 10
+    "format": "  {}% ",
+    "max-length": 10,
     },
     "cpu": {
     "interval": 1,
-    "format": "   {}% ",
-    "max-length": 10
+    "format": "  {}% ",
+    "max-length": 10,
+    },
+    "battery" : {
+        "interval" : 10,
+        "states" : {
+          "warning" : 20,
+          "critical" : 10,
+        },
+        "format" : "{icon} {capacity}%",
+        "format-icons" : [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+        "format-full" : "{icon} {capacity}%",
+        "format-charging" : "󰂄 {capacity}%",
+        "tooltip" : false,
     },
     "tray": {
         // "icon-size": 21,
@@ -42,8 +54,8 @@
     },
     "clock": {
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "format-alt": "  {:%a, %d %b %Y} ",
-        "format": "   {:%H:%M} ",
+        "format-alt": "   {:%a, %d %b %Y} ",
+        "format": "   {:%H:%M} ",
         "calendar": {
                     "weeks-pos"     : "none",
                     "on-scroll"     : 1,
@@ -75,10 +87,10 @@
         "format": "{icon}",
 	"nospacing": 1,
 	"tooltip-format": "Volume : {volume}%",
-        "format-muted": "󰝟 ",
+        "format-muted": " 󰝟 ",
         "format-icons": {
-            "headphone": " ",
-            "default": ["󰕿 ", "󰖀 ", "󰕾 "]
+            "headphone": "  ",
+            "default": [" 󰕿 ", " 󰖀 ", " 󰕾 "]
         },
         "on-click": "pamixer -t",
 	"on-click-right": "pavucontrol",
@@ -87,7 +99,7 @@
     "custom/launcher": {
 	"format": "  ",
 	"tooltip": false,
-	"on-click": "/home/tdm/.config/rofi/launchers/misc/launcher.sh &"
+	"on-click": "wofi --show drun"
     },
     "custom/next": {
         "exec": "python3 ~/.config/waybar/scripts/next.py --player spotify",
@@ -104,17 +116,9 @@
         "return-type": "json",
     },
     "custom/powermenu": {
-	"format": "⏻ ",
+	"format": " ⏻ ",
 	"tooltip": false,
 	"on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
-    },
-    "custom/ibus": {
-	"format": "{}",
-	"exec": "/home/tdm/.config/waybar/scripts/input.sh &",
-	"interval": 1,
-	"tooltip": false,
-	"tooltip-format": "{}",
-	"on-click": "/home/tdm/.config/waybar/scripts/ibus.sh &",
     },
    "custom/spotify": {
         "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",

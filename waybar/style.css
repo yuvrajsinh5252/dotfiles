@@ -1,5 +1,5 @@
-* {
-  font-family: Material Design Icons, JetBrainsMono Nerd Font, Iosevka Nerd Font;
+*{
+  font-family: Geist Mono, Nerd Font;
   font-size: 17px;
 }
 
@@ -20,20 +20,6 @@ window#waybar.hidden {
   color: #64727d;
 }
 
-#workspaces,
-#custom-ibus,
-#clock,
-#cpu,
-#memory,
-#custom-media,
-#tray,
-#mode,
-#custom-lock,
-#workspaces,
-#idle_inhibitor,
-#custom-powermenu,
-#custom-launcher,
-
 #cpu {
   color: #fa9f8e;
   border-radius: 8px 8px 8px 8px;
@@ -52,7 +38,7 @@ window#waybar.hidden {
 #workspaces button {
 	border: none;
 	color:  #d4d2a9;
-	padding: 3px;
+	padding: 1px;
 	background: transparent;
 	box-shadow: none;
 }
@@ -82,14 +68,12 @@ window#waybar.hidden {
 }
 
 #custom-launcher {
-  margin-left: 10px;
-  margin-right: 10px;
-
+  margin-left: 5px;
+  margin-right: 5px;
   padding-right: 5px;
-  padding-left: 0px;
+  padding-left: 5px;
 
-  font-size: 22px;
-
+  font-size: 25px;
   color: #7a95c9;
 
   margin-top: 1px;
@@ -108,40 +92,32 @@ window#waybar.hidden {
 #tray,
 #network {
   background-color: #3b4252;
-  padding: 0em 2em;
-
-  font-size: 20px;
 
   padding-left: 7.5px;
   padding-right: 7.5px;
 
-  padding-top: 2px;
-  padding-bottom: 2px;
-
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-
-  font-size: 20px;
 }
 
 #workspaces {
   padding-right: 10px;
+  border-radius: 8px;
 }
 
 #pulseaudio {
   color: #81A1C1;
-  padding-left: 10px;
-  margin-right: 10px;
-  font-size: 25px;
+  font-size: 18px;
   border-radius: 0px 8px 8px 0px;
   margin-left: -5px;
+  font-size: 20px;
 }
 
 #pulseaudio.muted {
   color: #fb958b;
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 18px;
   border-radius: 0px 8px 8px 0px;
 }
 
@@ -153,12 +129,9 @@ window#waybar.hidden {
 }
 
 #network {
-  padding-left: 0.2em;
   color: #5E81AC;
   border-radius: 8px 0px 0px 8px;
   padding-left: 12px;
-  padding-right: 14px;
-  font-size: 20px;
   margin-right: -5px;
 }
 
@@ -168,9 +141,7 @@ window#waybar.hidden {
 
 #battery {
   color: #8fbcbb;
-  border-radius: 0px 8px 8px 0px;
-  padding-right: 2px;
-  font-size: 22px;
+  border-radius: 8px;
 }
 
 #battery.critical,
@@ -178,21 +149,21 @@ window#waybar.hidden {
 #battery.full,
 #battery.plugged {
   color: #8fbcbb;
-  padding-left: 6px;
+  padding-left: 12px;
   padding-right: 12px;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 #battery.charging { 
-  font-size: 18px;
-  padding-right: 13px;
-  padding-left: 4px;
+  font-size: 17px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 #battery.full,
 #battery.plugged {
-  font-size: 22.5px;
-  padding-right: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 @keyframes blink {
@@ -233,9 +204,9 @@ window#waybar.hidden {
   color: #e78284;
   margin-right: 12px;
   border-radius: 8px;
-  padding: 0 6px 0 6.8px;
   margin-top: 7px;
   margin-bottom: 7px;
+  font-size: 24px;
 }
 
 tooltip {
@@ -281,11 +252,6 @@ label:focus {
   color: #2d3436;
 }
 
-#memory,
-#cpu {
-  font-size: 16px;
-}
-
 #custom-song_name,
 #custom-spotify,
 #custom-next,
@@ -306,7 +272,6 @@ label:focus {
 
 #custom-next {
   border-radius: 0px 8px 8px 0px;
-  margin-left: 0px;
 }
 
 #custom-spotify {
@@ -316,18 +281,10 @@ label:focus {
 }
 
 #custom-song_name {
-  font-size: 17px;
+  font-size: 15px;
   padding-right: 10px;
   border-radius: 8px 8px 8px 8px;
   margin-right: 10px;
   padding-left: 10px;
 }
 
-#custom-ibus { 
-  font-size: 16px;
-  color: #d1cfcf;
-  font-family: sourcecodepro;
-  font-weight: bold;
-  border-radius: 8px 8px 8px 8px;
-  margin-left: 0px;
-}

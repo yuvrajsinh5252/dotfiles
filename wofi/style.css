@@ -1,0 +1,39 @@
+* {
+    border-radius: 10px;
+    border: none;
+    padding: 2px;
+}
+
+window {
+    font-size: 18px;
+    font-family: "GeistMono Nerd Font";
+    background-color: rgba(50, 50, 80, 0.9);
+    color: white;
+    border-radius: 10px;
+}
+
+#text {
+    padding-left: 14px;
+}
+
+#entry {
+    padding: 0.25em;
+}
+
+#entry:selected {
+    background-color: #bbccdd;
+    background: linear-gradient(90deg, #bbccdd, #cca5dd, #dd77ff);
+}
+
+#text:selected {
+    color: #333333;
+}
+
+#input {
+    background-color: rgba(50, 50, 80, 0.5);
+    color: white;
+    padding: 0.25em;
+    margin: 2px;
+}
+
+

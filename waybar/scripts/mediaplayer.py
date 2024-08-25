@@ -39,7 +39,7 @@ def on_metadata(player, metadata, manager):
         track_info = 'AD PLAYING'
     elif player.get_artist() != '' and player.get_title() != '':
         track_info = ' '.format(artist=player.get_artist(),
-                                                 title=player.get_title())
+                                                title=player.get_title())
     else:
         track_info = player.get_title()
 
@@ -117,8 +117,8 @@ def main():
     for player in manager.props.player_names:
         if arguments.player is not None and arguments.player != player.name:
             logger.debug('{player} is not the filtered player, skipping it'
-                         .format(player=player.name)
-                         )
+                        .format(player=player.name)
+                        )
             continue
 
         init_player(manager, player)

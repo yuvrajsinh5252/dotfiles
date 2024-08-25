@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 import argparse
-import logging
-import sys
-import signal
-import gi
 import json
+import logging
+import signal
+import sys
+
+import gi
+
 gi.require_version('Playerctl', '2.0')
-from gi.repository import Playerctl, GLib
+from gi.repository import GLib, Playerctl
 
 logger = logging.getLogger(__name__)
 
@@ -15,8 +17,8 @@ def write_output(text, player):
     logger.info('Writing output')
 
     output = {'text': text,
-              'class': 'custom-' + player.props.player_name,
-              'alt': player.props.player_name}
+            'class': 'custom-' + player.props.player_name,
+            'alt': player.props.player_name}
 
     sys.stdout.write(json.dumps(output) + '\n')
     sys.stdout.flush()

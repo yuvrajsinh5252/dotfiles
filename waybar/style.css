@@ -154,12 +154,12 @@ label:focus {
 }
 
 #cpu {
-  background-color: rgb(73, 48, 97);
+  background-color: rgb(60, 129, 106);
   border-radius: 10px;
 }
 
 #memory {
-  background-color: #012a1f;
+  background-color: #376b72;
   border-radius: 10px;
 }
 
@@ -209,7 +209,7 @@ label:focus {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  color: #e5e5e5;
+  color: #ffffff;
   border-radius: 6px;
   padding: 2px 10px;
   background-color: @palette;
